@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Oak — Wood-Fired Kitchen, Mumbai</title>
+<meta name="description" content="Ember & Oak is a wood-fired, farm-to-table restaurant in Mumbai. Seasonal menus, live-fire cooking, and a warm room built for long dinners.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23C1440E'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="ember-dot"></span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="ember-dot small"></span>
+      <span class="logo-text">Ember<span class="amp">&amp;</span>Oak</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" class="nav-link">Story</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#testimonials" class="nav-link">Guests</a>
+      <a href="#visit" class="nav-link">Visit</a>
+      <a href="#reserve" class="nav-link nav-cta">Reserve a table</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80" alt="Wood-fired dish being plated at Ember & Oak" loading="eager">
+      <div class="hero-scrim"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow"><span class="ember-dot small"></span> Wood-fired kitchen · Mumbai</p>
+      <h1 class="hero-title">Everything here<br> has met the fire.</h1>
+      <p class="hero-sub">Seasonal, farm-sourced plates cooked over oak and citrus wood. No shortcuts, no gas line — just a live hearth and a long dinner.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn btn-primary">Reserve a table</a>
+        <a href="#menu" class="btn btn-ghost">View the menu</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to next section">
+      <span class="scroll-line"></span> Scroll
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE STRIP ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Wood-Fired</span><span>·</span><span>Farm to Table</span><span>·</span><span>Open Hearth</span><span>·</span><span>Small Batch</span><span>·</span><span>Seasonal Menu</span><span>·</span>
+      <span>Wood-Fired</span><span>·</span><span>Farm to Table</span><span>·</span><span>Open Hearth</span><span>·</span><span>Small Batch</span><span>·</span><span>Seasonal Menu</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT / STORY ============ -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1200&q=80" alt="Chef tending an open flame in the Ember & Oak kitchen" loading="lazy">
+        <div class="about-media-caption">The hearth, lit daily at 10am.</div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section-title">A kitchen built around one fire, not a menu of them.</h2>
+        <p class="body-text">Ember &amp; Oak opened in 2019 with a single rule: if it can't be cooked over the hearth, it doesn't go on the plate. That constraint shaped everything — a menu that changes with what the fire and the season allow, a dining room angled so every table can see the flame, and a kitchen that closes when the wood runs low, not when the clock says so.</p>
+        <p class="body-text">We work directly with a small circle of growers and fishers across Maharashtra. What arrives in the morning decides what you eat at night.</p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2019</span>
+            <span class="stat-label">Est.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Wood types in rotation</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label">Partner farms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="section-inner">
+      <p class="eyebrow center">The menu</p>
+      <h2 class="section-title center">Tonight's board</h2>
+      <p class="section-sub center">Printed fresh every afternoon. Prices in ₹, per plate unless noted.</p>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab is-active" role="tab" aria-selected="true" data-tab="starters">Starters</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="hearth">From the Hearth</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="mains">Mains</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="desserts">Desserts</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-panels">
+
+        <ul class="menu-panel is-active" id="panel-starters" role="tabpanel">
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Charred padron peppers, sea salt</span><span class="leader"></span><span class="menu-item-price">320</span></div>
+            <p class="menu-item-desc">Blistered whole over open flame, finished with lime.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Smoked burrata, roast tomato, basil oil</span><span class="leader"></span><span class="menu-item-price">560</span></div>
+            <p class="menu-item-desc">Hearth-smoked for six minutes over apple wood.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Beetroot tartare, smoked yogurt, rye crisp</span><span class="leader"></span><span class="menu-item-price">440</span></div>
+            <p class="menu-item-desc">Vegetarian. Roasted whole in embers, hand-chopped.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Grilled prawns, chilli-garlic butter</span><span class="leader"></span><span class="menu-item-price">690</span></div>
+            <p class="menu-item-desc">Konkan coast prawns, shell-on, basted at the fire's edge.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-panel" id="panel-hearth" role="tabpanel" hidden>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Whole hearth-roasted cauliflower</span><span class="leader"></span><span class="menu-item-price">520</span></div>
+            <p class="menu-item-desc">Buried in embers for 90 minutes, tahini, chili crunch.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Oak-fired half chicken</span><span class="leader"></span><span class="menu-item-price">780</span></div>
+            <p class="menu-item-desc">Brined 24 hours, spatchcocked, basted with herb butter.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Live-fire pork ribs, tamarind glaze</span><span class="leader"></span><span class="menu-item-price">920</span></div>
+            <p class="menu-item-desc">Slow over low coals for four hours, finished hot.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Charred octopus, smoked paprika, potato</span><span class="leader"></span><span class="menu-item-price">980</span></div>
+            <p class="menu-item-desc">Seared directly on the coal bed for a minute a side.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-panel" id="panel-mains" role="tabpanel" hidden>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Dry-aged ribeye, 28 days, bone marrow jus</span><span class="leader"></span><span class="menu-item-price">2,150</span></div>
+            <p class="menu-item-desc">Serves one. Cooked over oak, rested 12 minutes tableside.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Wood-fired sea bass, citrus butter</span><span class="leader"></span><span class="menu-item-price">1,340</span></div>
+            <p class="menu-item-desc">Whole fish, salt-crusted, cracked tableside.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Charred wild mushroom risotto</span><span class="leader"></span><span class="menu-item-price">760</span></div>
+            <p class="menu-item-desc">Vegetarian. Ember-roasted mushroom stock, aged parmesan.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Hearth lamb shoulder, seven hours</span><span class="leader"></span><span class="menu-item-price">1,580</span></div>
+            <p class="menu-item-desc">Falls off the bone. Served with charred greens.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-panel" id="panel-desserts" role="tabpanel" hidden>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Smoked chocolate tart, sea salt</span><span class="leader"></span><span class="menu-item-price">420</span></div>
+            <p class="menu-item-desc">70% dark chocolate, embered cream.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Grilled pineapple, brown butter, rum</span><span class="leader"></span><span class="menu-item-price">380</span></div>
+            <p class="menu-item-desc">Caramelised over dying coals, vanilla ice cream.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Basque-style burnt cheesecake</span><span class="leader"></span><span class="menu-item-price">400</span></div>
+            <p class="menu-item-desc">Baked in the hearth's residual heat, deliberately scorched.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-panel" id="panel-drinks" role="tabpanel" hidden>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Smoked old fashioned</span><span class="leader"></span><span class="menu-item-price">650</span></div>
+            <p class="menu-item-desc">Bourbon, oak smoke, orange bitters.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">House red — Nashik valley blend</span><span class="leader"></span><span class="menu-item-price">480</span></div>
+            <p class="menu-item-desc">Glass. Bottle available on request.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-head"><span class="menu-item-name">Charred citrus soda</span><span class="leader"></span><span class="menu-item-price">220</span></div>
+            <p class="menu-item-desc">Non-alcoholic. Grilled lime, mint, soda.</p>
+          </li>
+        </ul>
+
+      </div>
+
+      <p class="menu-note">A discretionary 5% service charge applies. Please tell your server about any allergies — everything is cooked to order over open flame.</p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-inner">
+      <p class="eyebrow center">Inside the room</p>
+      <h2 class="section-title center">A look at the fire</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=80" alt="Warm interior dining room at Ember & Oak" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=80" alt="Wood-fired steak plated with charred vegetables" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Close up of a hearth-cooked dish" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80" alt="Fresh pasta preparation in the kitchen" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Wood-fired oven dish fresh from the flame" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Table set for dinner at Ember & Oak" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=900&q=80" alt="Table setting at Ember & Oak dining room" loading="lazy"></figure>
+      <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Plated dish in the Ember & Oak dining room" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-inner">
+      <p class="eyebrow center">Guests</p>
+      <h2 class="section-title center">Word from the room</h2>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <blockquote class="testimonial">
+            <p>"The ribeye alone is worth the drive. You can taste the wood — genuinely, not a marketing line."</p>
+            <cite>— Aditi R., Mumbai</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Watched the chefs work the hearth from our table for two hours. Best seat in the city."</p>
+            <cite>— Karan M.</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Menu changes every visit and it's never once disappointed. The burnt cheesecake is unreasonable."</p>
+            <cite>— Sana P.</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Book ahead. This is not a place you walk into on a Saturday and expect a table."</p>
+            <cite>— Rohan D.</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION ============ -->
+  <section class="reserve" id="reserve">
+    <div class="section-inner reserve-grid">
+      <div class="reserve-copy reveal">
+        <p class="eyebrow">Reserve</p>
+        <h2 class="section-title">Save a seat by the fire.</h2>
+        <p class="body-text">Tables are held for 15 minutes past booking time. For parties larger than 8, please call us directly — we'll set up the long table.</p>
+        <div class="reserve-alt">
+          <p><strong>Prefer to call?</strong></p>
+          <a href="tel:+912266550101">+91 22 6655 0101</a>
+        </div>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" required autocomplete="name">
+            <span class="field-error" id="err-fullName"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            <span class="field-error" id="err-phone"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field-error" id="err-email"></span>
+        </div>
+
+        <div class="form-row form-row-three">
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+            <span class="field-error" id="err-date"></span>
+          </div>
+          <div class="field">
+            <label for="time">Time</label>
+            <select id="time" name="time" required>
+              <option value="">Select</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+              <option>9:30 PM</option>
+            </select>
+            <span class="field-error" id="err-time"></span>
+          </div>
+          <div class="field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+            <span class="field-error" id="err-guests"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notes">Notes <span class="optional">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Allergies, occasions, seating preference…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="btn-label">Confirm reservation</span>
+        </button>
+
+        <p class="form-success" id="formSuccess" role="status" hidden>
+          <span class="ember-dot small"></span> Thank you — your table is held. A confirmation has been sent to your email.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ VISIT / LOCATION ============ -->
+  <section class="visit" id="visit">
+    <div class="section-inner visit-grid">
+      <div class="visit-info reveal">
+        <p class="eyebrow">Visit</p>
+        <h2 class="section-title">Find the hearth.</h2>
+
+        <dl class="visit-list">
+          <div>
+            <dt>Address</dt>
+            <dd>14 Kala Ghoda Lane, Fort, Mumbai 400001</dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+912266550101">+91 22 6655 0101</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@emberandoak.in">hello@emberandoak.in</a></dd>
+          </div>
+        </dl>
+
+        <table class="hours-table">
+          <tbody>
+            <tr><th>Mon – Thu</th><td>6:00 PM – 11:30 PM</td></tr>
+            <tr><th>Fri – Sat</th><td>6:00 PM – 12:30 AM</td></tr>
+            <tr><th>Sunday</th><td>12:30 PM – 11:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="visit-map reveal">
+        <iframe
+          title="Ember & Oak location map"
+          src="https://www.google.com/maps?q=Kala%20Ghoda%2C%20Fort%2C%20Mumbai&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="ember-dot small"></span>
+        <span class="logo-text">Ember<span class="amp">&amp;</span>Oak</span>
+      </a>
+      <p class="footer-tag">Wood-fired kitchen, Fort, Mumbai. Est. 2019.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+        <a href="#" aria-label="Zomato" class="social-link">Zomato</a>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <span class="footer-nav-title">Explore</span>
+      <a href="#about">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="footer-newsletter">
+      <span class="footer-nav-title">Stay in the loop</span>
+      <p>Seasonal menu drops, one email a month.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email" aria-label="Email address" required>
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg" hidden>Subscribed. See you at the table.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Ember &amp; Oak. All rights reserved.</p>
+    <p>Built for guests who like their dinner slow.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
