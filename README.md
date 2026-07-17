@@ -31,4 +31,5 @@ The project successfully delivers a complete restaurant website that is visually
 Ember & Oak demonstrates how a professional restaurant website can be developed using only core web technologies. The project emphasizes clean design, responsive layouts, accessibility, and interactive user interfaces while maintaining simplicity, fast performance, and easy maintainability. It serves as a strong foundation for future enhancements such as backend reservation management, online ordering, authentication, and payment integration.
 
 
+
 Deploy Link :- rococo-dolphin-45060e.netlify.app
